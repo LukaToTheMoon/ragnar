@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('img/bcpic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.container{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgb(142, 142, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.textDiv{
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    overflow: hidden;
+    
+}
+
+.delOrDoneDiv{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-trash{
+    padding-left: 5px;
+    color: red;
+    cursor: pointer;
+    border: 1px solid red;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: .2s ease-in-out;}
+
+.fa-trash:hover{
+    background-color: red;
+    color: white;
+}
+
+.fa-check{
+    padding: 0 5px;
+    color: green;
+    cursor: pointer;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 5px 10px;
+    transition: .2s ease-in-out;}
+
+.fa-check:hover{
+    background-color: green;
+    color: white;
+}
+
+.fa-x{
+    padding: 0 5px;
+    color: rgb(176, 176, 0);
+    cursor: pointer;
+    border: 1px solid rgb(176, 176, 0);;
+    border-radius: 3px;
+    padding: 5px 10px;
+    transition: .2s ease-in-out;
+}
+
+.fa-x:hover{
+    background-color: rgb(176, 176, 0);;
+    color: white;
+}
+
+
+.input-text{
+    width: 575px;
+    padding: 0 5px;
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#addBtn{
+    padding: 0px 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid green;
+    color: green;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+}
+
+#addBtn:hover{
+    background-color: green;
+    color: white;
+}
+
+@media (max-width: 720px) {
+    .input-text{
+        width: 380px;
+    }
+    .container{
+        width: 500px;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .input-text{
+        width: 280px;
+    }
+    .container{
+        width: 400px;
+    }
+}
+
+@media (max-width: 430px) {
+    .input-text{
+        width: 280px;
+    }
+    .container{
+        width: 400px;
+    }
+    
+}
